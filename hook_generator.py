@@ -37,7 +37,57 @@ def _clean(text: str) -> str:
 def _wc(s: str) -> int:
     return len(s.split())
 
-def generate_hooks(keywords: list[str], target_n=20) -> list[str]:
+def generate_hooks_without_templates(keywords: list[str], target_n=20) -> list[str]:
+    """Generate hooks directly from keywords without using predefined templates"""
+    hooks, seen = [], set()
+    
+    # Simple hook patterns that work with any keyword
+    simple_patterns = [
+        lambda kw: f"{kw} 꿀팁 모음",
+        lambda kw: f"{kw} 실전 후기",
+        lambda kw: f"{kw} 추천 리스트",
+        lambda kw: f"{kw} 가이드북",
+        lambda kw: f"{kw} 베스트 선택",
+        lambda kw: f"{kw} 숨은 보석",
+        lambda kw: f"{kw} 완벽 정리",
+        lambda kw: f"{kw} 체험 일지",
+        lambda kw: f"{kw} 핫한 곳",
+        lambda kw: f"{kw} 진짜 후기",
+        lambda kw: f"진짜 맛있는 {kw}",
+        lambda kw: f"현지인이 추천하는 {kw}",
+        lambda kw: f"서울 최고 {kw}",
+        lambda kw: f"가성비 최고 {kw}",
+        lambda kw: f"{kw} 완전 정복",
+        lambda kw: f"{kw} 맛집 지도",
+        lambda kw: f"{kw} 여행 코스",
+        lambda kw: f"{kw} 데이트 코스",
+    ]
+    
+    i = 0
+    while len(hooks) < target_n and i < target_n * 10:
+        i += 1
+        if not keywords:
+            kw = "오늘의 맛집"
+        else:
+            kw = keywords[(i - 1) % len(keywords)]
+        
+        pattern = simple_patterns[i % len(simple_patterns)]
+        text = _clean(pattern(kw))
+        
+        if not text:
+            continue
+        
+        if 3 <= _wc(text) <= 12 and text not in seen:
+            hooks.append(text)
+            seen.add(text)
+    
+    return hooks[:target_n]
+
+def generate_hooks(keywords: list[str], target_n=20, use_templates=True) -> list[str]:
+    """Generate hooks with option to use templates or not"""
+    if not use_templates:
+        return generate_hooks_without_templates(keywords, target_n)
+    
     hooks, seen = [], set()
     i = 0
     while len(hooks) < target_n and i < target_n * 5:
@@ -75,15 +125,18 @@ def main():
     ap.add_argument("--mid",   type=int, default=7)
     ap.add_argument("--niche", type=int, default=6)
     ap.add_argument("--local", type=int, default=5)
+    ap.add_argument("--no-templates", action="store_true", 
+                   help="Generate hooks without using predefined templates")
     args = ap.parse_args()
 
     keywords = get_final_keywords()
-    hooks = generate_hooks(keywords, target_n=20)
+    hooks = generate_hooks(keywords, target_n=20, use_templates=not args.no_templates)
     picked = get_hashtag_set(args.broad, args.mid, args.niche, args.local, keywords=keywords)
     hashtags = flatten_hashtags(picked)
 
     save_outputs(hooks, hashtags, args.date)
     print(f"Generated {len(hooks)} hooks and {len(hashtags)} hashtags → outputs/{args.date}_hooks.*")
+    print(f"Template mode: {'OFF' if args.no_templates else 'ON'}")
 
 if __name__ == "__main__":
     main()
