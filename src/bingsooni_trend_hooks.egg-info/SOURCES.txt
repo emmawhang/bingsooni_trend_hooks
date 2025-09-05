@@ -1,0 +1,15 @@
+pyproject.toml
+src/bingsooni/__init__.py
+src/bingsooni/hook_generator.py
+src/bingsooni/fetchers/__init__.py
+src/bingsooni/fetchers/instagram_hashtag_updater.py
+src/bingsooni/fetchers/trends_fetchers.py
+src/bingsooni/fetchers/web_trends_scraper.py
+src/bingsooni/generators/__init__.py
+src/bingsooni/generators/ai_generator.py
+src/bingsooni/managers/__init__.py
+src/bingsooni/managers/hashtags_manager.py
+src/bingsooni_trend_hooks.egg-info/PKG-INFO
+src/bingsooni_trend_hooks.egg-info/SOURCES.txt
+src/bingsooni_trend_hooks.egg-info/dependency_links.txt
+src/bingsooni_trend_hooks.egg-info/top_level.txt
