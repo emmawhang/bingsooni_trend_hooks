@@ -9,3 +9,6 @@ state/
 
 # secrets
 .env
+
+# secrets
+.env
