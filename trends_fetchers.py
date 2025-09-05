@@ -6,7 +6,7 @@ def fetch_pytrends_keywords() -> list[tuple[str, float]]:
     return [("빙수", 0.6), ("카페", 0.55), ("여름디저트", 0.5), ("서울맛집", 0.45), ("노포", 0.4)]
 
 def fetch_reddit_keywords() -> list[tuple[str, float]]:
-    return [("hidden gem", 0.4), ("budget eats", 0.35), ("line hacks", 0.3)]
+    return [("숨은맛집", 0.4), ("가성비맛집", 0.35), ("맛집팁", 0.3)]
 
 def load_internal_keywords(path: str = "data/internal_keywords.csv") -> list[tuple[str, float]]:
     p = Path(path)

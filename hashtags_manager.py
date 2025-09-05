@@ -198,6 +198,23 @@ def get_hashtag_set(broad_n=7, mid_n=7, niche_n=6, local_n=5, keywords: List[str
     hooks = hooks or []
     picked = {"broad": [], "mid": [], "niche": [], "local": []}
     
+    # Check if we should update hashtags from Instagram trends
+    try:
+        from instagram_hashtag_updater import InstagramHashtagUpdater
+        updater = InstagramHashtagUpdater()
+        
+        # Check if we need daily update (if state file is old)
+        import datetime
+        if STATE_PATH.exists():
+            last_modified = datetime.datetime.fromtimestamp(STATE_PATH.stat().st_mtime)
+            if (datetime.datetime.now() - last_modified).days >= 1:
+                print("🔄 Running daily hashtag trend update...")
+                updater.run_daily_update()
+                # Reload hashtags after update
+                tiers = _load_hashtags()
+    except ImportError:
+        print("📱 Instagram updater not available")
+    
     # Try to use AI generator for hashtags if available
     ai_hashtags = []
     try:

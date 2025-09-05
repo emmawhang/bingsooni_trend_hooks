@@ -1,0 +1,121 @@
+keyword,score,category,description
+아이스크림과 와인,1.0,main,Main keyword combination
+아이스크림,0.9,dessert,Ice cream
+와인,0.9,beverage,Wine
+디저트 페어링,0.8,concept,Dessert pairing
+와인 페어링,0.8,concept,Wine pairing
+달콤한 조합,0.7,concept,Sweet combination
+아이스크림 바,0.6,dessert,Ice cream bar
+젤라또,0.7,dessert,Gelato
+소르베,0.6,dessert,Sorbet
+바닐라 아이스크림,0.6,dessert,Vanilla ice cream
+초콜릿 아이스크림,0.6,dessert,Chocolate ice cream
+딸기 아이스크림,0.6,dessert,Strawberry ice cream
+레드와인,0.7,beverage,Red wine
+화이트와인,0.7,beverage,White wine
+로제와인,0.7,beverage,Rose wine
+스파클링와인,0.8,beverage,Sparkling wine
+샴페인,0.7,beverage,Champagne
+디저트 와인,0.8,beverage,Dessert wine
+프로세코,0.6,beverage,Prosecco
+모스카토,0.7,beverage,Moscato
+포트와인,0.6,beverage,Port wine
+아이스와인,0.8,beverage,Ice wine
+달콤한 와인,0.7,beverage,Sweet wine
+드라이 와인,0.6,beverage,Dry wine
+부드러운 와인,0.6,beverage,Smooth wine
+프리미엄 아이스크림,0.7,dessert,Premium ice cream
+수제 아이스크림,0.8,dessert,Handmade ice cream
+이탈리아 젤라또,0.7,dessert,Italian gelato
+프랑스 아이스크림,0.6,dessert,French ice cream
+유기농 아이스크림,0.6,dessert,Organic ice cream
+비건 아이스크림,0.6,dessert,Vegan ice cream
+무설탕 아이스크림,0.5,dessert,Sugar-free ice cream
+이탈리아 와인,0.7,beverage,Italian wine
+프랑스 와인,0.7,beverage,French wine
+스페인 와인,0.6,beverage,Spanish wine
+칠레 와인,0.6,beverage,Chilean wine
+호주 와인,0.6,beverage,Australian wine
+캘리포니아 와인,0.6,beverage,California wine
+독일 와인,0.6,beverage,German wine
+신세계 와인,0.5,beverage,New World wine
+구세계 와인,0.5,beverage,Old World wine
+내추럴 와인,0.7,beverage,Natural wine
+바이오다이나믹 와인,0.6,beverage,Biodynamic wine
+유기농 와인,0.6,beverage,Organic wine
+페어링 디너,0.8,concept,Pairing dinner
+테이스팅 메뉴,0.7,concept,Tasting menu
+와인 바,0.8,location,Wine bar
+디저트 카페,0.8,location,Dessert cafe
+젤라또 샵,0.7,location,Gelato shop
+아이스크림 가게,0.7,location,Ice cream shop
+와이너리,0.6,location,Winery
+비스트로,0.6,location,Bistro
+파인다이닝,0.7,location,Fine dining
+캐주얼 다이닝,0.6,location,Casual dining
+로맨틱 데이트,0.8,occasion,Romantic date
+특별한 날,0.7,occasion,Special occasion
+기념일,0.7,occasion,Anniversary
+생일,0.6,occasion,Birthday
+발렌타인데이,0.7,occasion,Valentine's Day
+화이트데이,0.6,occasion,White Day
+크리스마스,0.7,occasion,Christmas
+새해,0.5,occasion,New Year
+여름 디저트,0.8,seasonal,Summer dessert
+겨울 와인,0.6,seasonal,Winter wine
+가을 디저트,0.6,seasonal,Fall dessert
+봄 와인,0.5,seasonal,Spring wine
+시원한 디저트,0.8,seasonal,Cool dessert
+따뜻한 분위기,0.6,seasonal,Warm atmosphere
+달콤쌉싸름,0.7,taste,Sweet and bitter
+부드러운 식감,0.6,taste,Smooth texture
+크리미한 맛,0.7,taste,Creamy taste
+상큼한 맛,0.6,taste,Fresh taste
+진한 맛,0.6,taste,Rich taste
+고급스러운 맛,0.7,taste,Luxurious taste
+섬세한 맛,0.6,taste,Delicate taste
+복합적인 맛,0.6,taste,Complex taste
+균형잡힌 맛,0.6,taste,Balanced taste
+독특한 조합,0.7,concept,Unique combination
+색다른 경험,0.7,concept,Different experience
+새로운 트렌드,0.8,concept,New trend
+인스타그램 핫플,0.8,social,Instagram hotspot
+SNS 인증샷,0.7,social,SNS photo
+감성 사진,0.7,social,Aesthetic photo
+데이트 코스,0.8,social,Date course
+친구 모임,0.6,social,Friends gathering
+혼술,0.6,social,Solo drinking
+커플 데이트,0.8,social,Couple date
+소개팅,0.6,social,Blind date
+회식,0.5,social,Company dinner
+축하 파티,0.6,social,Celebration party
+가성비,0.7,value,Cost-effectiveness
+고급,0.7,value,Luxury
+프리미엄,0.8,value,Premium
+합리적 가격,0.6,value,Reasonable price
+저렴한 가격,0.5,value,Affordable price
+한정판,0.7,value,Limited edition
+시즌 한정,0.7,value,Seasonal limited
+신메뉴,0.7,value,New menu
+베스트셀러,0.6,value,Bestseller
+시그니처,0.7,value,Signature
+추천 메뉴,0.7,value,Recommended menu
+인기 메뉴,0.7,value,Popular menu
+연남동,0.8,location,Yeonnam-dong
+성수동,0.8,location,Seongsu-dong
+홍대,0.8,location,Hongdae
+강남,0.8,location,Gangnam
+이태원,0.7,location,Itaewon
+명동,0.6,location,Myeongdong
+압구정,0.7,location,Apgujeong
+청담동,0.7,location,Cheongdam-dong
+한남동,0.7,location,Hannam-dong
+서촌,0.6,location,Seochon
+북촌,0.6,location,Bukchon
+인사동,0.6,location,Insadong
+건대,0.6,location,Konkuk University area
+신촌,0.6,location,Sinchon
+대학로,0.5,location,Daehangno
+을지로,0.6,location,Euljiro
+서울역,0.5,location,Seoul Station
+강변,0.5,location,Riverside

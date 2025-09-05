@@ -9,6 +9,10 @@ import os
 from typing import List, Dict
 import random
 import time
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 class AIGenerator:
     def __init__(self, api_key: str = None):
