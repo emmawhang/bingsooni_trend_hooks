@@ -3,8 +3,8 @@ import argparse, csv, re
 from datetime import datetime
 from pathlib import Path
 
-from trends_fetchers import get_final_keywords
-from hashtags_manager import get_hashtag_set, flatten_hashtags
+from .fetchers.trends_fetchers import get_final_keywords
+from .managers.hashtags_manager import get_hashtag_set, flatten_hashtags
 
 STOPWORDS = set()
 if Path("data/stopwords.txt").exists():
