@@ -15,3 +15,7 @@ state/
 
 # secrets
 .env
+
+data/outputs/
+data/state/
+.env
